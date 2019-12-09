@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
 }
 
 body {
@@ -12,14 +20,52 @@ body {
 
 header {
   background: #4a90e2;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 40px auto;
+}
+
+header nav {
   display: flex;
   justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  height: 64px;
+  padding: 0 15px;
+  font-size: 14px;
 }
 
-header img {
-  justify-content: flex-start;
+nav img {
+  height: 24px;
 }
 
-header span {
-  align-items: flex-end;
+nav > span {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+nav > div i {
+  margin-left: 8px;
+}
+
+#postList {
+  max-width: 700px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+}
+
+.post-header {
+  display: flex;
+}
+
+.post-header img {
+  border-radius: 50%;
 }
